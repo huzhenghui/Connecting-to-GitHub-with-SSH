@@ -1,6 +1,6 @@
 FROM alpine
 
-MAINTAINER huzhenghui hu@daonao.com
+LABEL maintainer="hu@daonao.com"
 
 COPY known_hosts /root/.ssh/known_hosts
 COPY entrypoint.sh /root/entrypoint.sh
