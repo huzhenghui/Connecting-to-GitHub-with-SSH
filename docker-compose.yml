@@ -1,0 +1,9 @@
+version: "3.2"
+services:
+  ssh-github:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - SSH_GITHUB_TAG
+    image: ssh-github:${SSH_GITHUB_TAG}

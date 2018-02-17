@@ -2,6 +2,10 @@ FROM alpine
 
 LABEL maintainer="hu@daonao.com"
 
+ARG SSH_GITHUB_TAG
+
+LABEL SSH_GITHUB_TAG="${SSH_GITHUB_TAG}"
+
 COPY known_hosts /root/.ssh/known_hosts
 COPY entrypoint.sh /root/entrypoint.sh
 
